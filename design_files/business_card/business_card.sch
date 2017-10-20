@@ -290,16 +290,12 @@ F 3 "" H 6300 3100 50  0001 C CNN
 	1    6300 3100
 	0    1    1    0   
 $EndComp
-Text GLabel 6850 4300 0    60   Input ~ 0
+Text GLabel 6500 4300 0    60   Input ~ 0
 SCLK
 Text GLabel 6850 4400 0    60   Input ~ 0
 SDA
-Text GLabel 6850 3600 0    60   Input ~ 0
-XLAT
-Text GLabel 6700 3500 0    60   Input ~ 0
+Text GLabel 6600 3500 0    60   Input ~ 0
 BLANK
-Text GLabel 6600 3300 0    60   Input ~ 0
-GSCLK
 $Comp
 L GND #PWR9
 U 1 1 59C4A413
@@ -326,21 +322,17 @@ Text GLabel 1450 3900 0    60   Input ~ 0
 SCLK
 Text GLabel 1450 3700 0    60   Input ~ 0
 SDA
-Text GLabel 1800 3800 0    60   Input ~ 0
-XLAT
 Text GLabel 1800 4200 0    60   Input ~ 0
 BLANK
-Text GLabel 1800 4000 0    60   Input ~ 0
-GSCLK
 $Comp
 L R R8
 U 1 1 59C5D4C8
-P 6650 3100
-F 0 "R8" V 6730 3100 50  0000 C CNN
-F 1 "10K" V 6650 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6580 3100 50  0001 C CNN
-F 3 "10K" H 6650 3100 50  0001 C CNN
-	1    6650 3100
+P 6750 3350
+F 0 "R8" V 6830 3350 50  0000 C CNN
+F 1 "10K" V 6750 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6680 3350 50  0001 C CNN
+F 3 "10K" H 6750 3350 50  0001 C CNN
+	1    6750 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -665,14 +657,9 @@ Wire Wire Line
 	1450 3900 2050 3900
 Wire Wire Line
 	2050 3700 1450 3700
-Wire Wire Line
-	6650 2950 6650 2700
-Connection ~ 6650 2700
-Wire Wire Line
-	6650 3300 6650 3250
 Connection ~ 6650 3300
 Wire Wire Line
-	6700 3500 6850 3500
+	6600 3500 6850 3500
 Wire Wire Line
 	2550 6800 2350 6800
 Wire Wire Line
@@ -718,13 +705,7 @@ Wire Wire Line
 	4850 3800 4850 3700
 Wire Wire Line
 	6150 2700 6200 2700
-Wire Wire Line
-	6600 3300 6850 3300
 Connection ~ 6150 3100
-Wire Wire Line
-	1800 3800 2050 3800
-Wire Wire Line
-	2050 4000 1800 4000
 Wire Wire Line
 	1500 4100 2050 4100
 Wire Wire Line
@@ -819,4 +800,16 @@ Connection ~ 4850 4200
 Wire Wire Line
 	5100 3700 5100 3800
 Connection ~ 4850 3700
+Wire Wire Line
+	6500 4300 6850 4300
+Connection ~ 6650 4300
+Wire Wire Line
+	6650 3300 6850 3300
+Wire Wire Line
+	6850 3500 6850 3600
+Wire Wire Line
+	6650 3300 6650 4300
+Wire Wire Line
+	6750 3200 6750 2700
+Connection ~ 6750 2700
 $EndSCHEMATC
